@@ -91,3 +91,5 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 > Use `:pseudo-class: {style}` format.
 
 ## 8. Styled Component with Nested Components
+
+> Create multiple styled components and use them inside other components.

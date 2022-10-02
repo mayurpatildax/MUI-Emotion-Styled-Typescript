@@ -5,7 +5,7 @@ import { Paper } from "@mui/material";
 
 // Type for styled component props
 type StyledPaperProps = {
-  fontsize?: string; //optional
+  fontSize?: string; //optional
   bgColor: string; // compulsory
 };
 
@@ -18,14 +18,17 @@ const StyledWithThemeNProps = () => {
     color: white;
 
     // props
-    font-size: ${(props) => props.fontsize};
+    font-size: ${(props) => props.fontSize};
     background-color: ${(props) => props.bgColor};
   `;
 
   return (
     <>
       <h3>Styled With Theme and Props</h3>
-      <StyledPaper fontsize="40px" bgColor="green">
+      {/* if custom prop name is same as css property - 
+      use camelCase for custom prop */}
+
+      <StyledPaper fontSize="40px" bgColor="green">
         Paper with theme and props
       </StyledPaper>
     </>

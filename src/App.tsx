@@ -9,6 +9,7 @@ import StyledWithThemeNProps from "./components/StyledWithThemeNProps";
 // Importing styled component
 import StyledButtonExport from "./components/StyledButtonExport";
 import StyledPseudoClasses from "./components/StyledPseudoClasses";
+import StyledWithNested from "./components/StyledWithNested";
 
 function App() {
   const handleBtnClick = () => console.log("StyledButton is clicked");
@@ -35,6 +36,8 @@ function App() {
       </StyledButtonExport>
       <hr />
       <StyledPseudoClasses />
+      <hr />
+      <StyledWithNested />
     </>
   );
 }

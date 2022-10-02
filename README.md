@@ -1,46 +1,72 @@
-# Getting Started with Create React App
+# MUI Emotion Styled Components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Emotion Installation
 
-## Available Scripts
+### `yarn add @emotion/react @emotion/styled`
+
+# Available Scripts
 
 In the project directory, you can run:
 
 ### `yarn start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Notes
 
-### `yarn test`
+## 1. Styled Component Syntax
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+> 1. For normal HTML elements, use dot format <br />
+>    Examples - styled.div, styled.h1, styled.button
+>    <br />
+>
+> 2. For MUI Components - use brackets <br />
+>    Examples - styled(Paper), styled(Button)
+>    <br />
+>
+> 3. Write all css properties in CSS format<br />
+>    Examples - background-color, font-size, etc
+>    <br />
+>
+> 4. Dont use ""/'' [Double or Single quote] for writting the property value
+>    <br />
 
-### `yarn build`
+## 2. Styled Component with Props
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+> In typescript Strict mode - We have to add prop types <br />
+>
+> 1. Create a PropType which has type for all props <br />
+> 2. Assign PropType to styled component <br />
+>    Example - `styled(Button)<PropType>` <br />
+>
+> 3. While accessign props -
+>
+>    1. Passing prop value in component
+>       1. Pass `fontSize="30px"` to the component and
+>       2. Use `font-size: ${(props) => props.fontSize};` to assign prop value to css property
+>    2. Only passing prop to the component
+>       1. Pass `largetext` to the component and
+>       2. Use `font-size: ${(props) => props.largetext && "45px"};` to assign prop value to css property
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 3. Styled Component with Conditional Props
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> We can conditionally assign value to CSS property based on props passed to component <br />
+> In this, pass the prop name only to the component <br />
+>
+> 1. Pass `largetext` to the component and <br />
+> 2. Use [&& Operator] - `font-size: ${(props) => props.largetext && "45px"};` to assign prop value to css property [Only for true condition]
+> 3. Use [Ternary operator] - `font-size: ${(props) => props.largetext ? "45px" : "20px"};` to assign prop value to css property [For both true and false]
 
-### `yarn eject`
+## 3. Styled Component with Theme
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 4. Styled Component with Theme and Props
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 5. Exporting Styled Component from other file
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 6. Styled Component with Pseudo-Classes
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+> For pseudo classes in component <br />
+> Use `:pseudo-class: {style}` format.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 7. Styled Component with Nested Components

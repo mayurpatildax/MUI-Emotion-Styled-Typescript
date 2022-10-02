@@ -6,7 +6,7 @@ import { Paper } from "@mui/material";
 // Type for styled component props
 type StyledPaperProps = {
   fontSize?: string; //optional
-  bgColor: string; // compulsory
+  bgcolor: string; // compulsory
 };
 
 const StyledWithThemeNProps = () => {
@@ -19,7 +19,7 @@ const StyledWithThemeNProps = () => {
 
     // props
     font-size: ${(props) => props.fontSize};
-    background-color: ${(props) => props.bgColor};
+    background-color: ${(props) => props.bgcolor};
   `;
 
   return (
@@ -28,7 +28,9 @@ const StyledWithThemeNProps = () => {
       {/* if custom prop name is same as css property - 
       use camelCase for custom prop */}
 
-      <StyledPaper fontSize="40px" bgColor="green">
+      {/* For custom prop - if name is not same as css property - use [lowercase] for prop */}
+      {/* If bgColor name is used - console warning appears - React does not recognize the `redBg` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `redbg` instead. If you accidentally passed it from a parent component, remove it from the DOM element. */}
+      <StyledPaper fontSize="40px" bgcolor="green">
         Paper with theme and props
       </StyledPaper>
     </>

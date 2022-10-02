@@ -3,6 +3,8 @@
 ## Emotion Installation
 
 > Command - `yarn add @emotion/react @emotion/styled`
+>
+> Import - `import styled from '@emotion/styled'`
 
 ## Available Scripts
 

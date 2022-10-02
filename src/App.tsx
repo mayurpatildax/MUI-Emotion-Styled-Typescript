@@ -8,6 +8,7 @@ import StyledWithThemeNProps from "./components/StyledWithThemeNProps";
 
 // Importing styled component
 import StyledButtonExport from "./components/StyledButtonExport";
+import StyledPseudoClasses from "./components/StyledPseudoClasses";
 
 function App() {
   const handleBtnClick = () => console.log("StyledButton is clicked");
@@ -32,6 +33,8 @@ function App() {
       <StyledButtonExport variant="contained" onClick={handleBtnClick}>
         Click here.
       </StyledButtonExport>
+      <hr />
+      <StyledPseudoClasses />
     </>
   );
 }

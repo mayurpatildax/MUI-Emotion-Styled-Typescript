@@ -3,6 +3,7 @@ import MUIPaperStyled from "./components/MUIPaperStyled";
 import MUIStyledWithProps from "./components/MUIStyledWithProps";
 import NormalStyled from "./components/NormalStyled";
 import StyledWithTheme from "./components/StyledWithTheme";
+import StyledWithThemeNProps from "./components/StyledWithThemeNProps";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <MUIStyledWithProps />
       <hr />
       <StyledWithTheme />
+      <hr />
+      <StyledWithThemeNProps />
     </>
   );
 }

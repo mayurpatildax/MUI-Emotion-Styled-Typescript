@@ -2,6 +2,7 @@ import React from "react";
 import MUIPaperStyled from "./components/MUIPaperStyled";
 import MUIStyledWithProps from "./components/MUIStyledWithProps";
 import NormalStyled from "./components/NormalStyled";
+import StyledWithTheme from "./components/StyledWithTheme";
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
       <MUIPaperStyled />
       <hr />
       <MUIStyledWithProps />
+      <hr />
+      <StyledWithTheme />
     </>
   );
 }

@@ -1,17 +1,16 @@
 # MUI Emotion Styled Components
 
-# Emotion Installation
+## Emotion Installation
 
-### `yarn add @emotion/react @emotion/styled`
+> Command - `yarn add @emotion/react @emotion/styled`
 
-# Available Scripts
+## Available Scripts
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> In the project directory, you can run: `yarn start`
+>
+> Runs the app in the development mode.\
+>
+> Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 # Notes
 
@@ -64,7 +63,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 > We can access theme properties in styled component using useTheme hook <br />
 >
-> 1. Import useTheme - `import { useTheme } from '@mui/material/styles` <br />
+> 1. Import useTheme - `import { useTheme } from '@mui/material/styles'` <br />
 > 2. Access the theme via
 >    1. Directly - `margin: useTheme().spacing(value)` <br />
 >    2. Create a variable using hook <br /> `const theme = useTheme()` <br />
@@ -82,7 +81,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 > Steps to import styled component from other file <br />
 >
 > 1. export the component from file where it is define - `export default StyledComponent` <br />
-> 2. import the component using - `import StyledComponent from './path`
+> 2. import the component using - `import StyledComponent from './path'`
 > 3. Use StyledComponent like normal component - `<StyledComponent>...</StyledComponent>`
 
 ## 7. Styled Component with Pseudo-Classes
